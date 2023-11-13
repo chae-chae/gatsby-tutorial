@@ -4,7 +4,6 @@ import Seo from "../../components/Seo";
 import { Link, PageProps, graphql } from "gatsby";
 
 export default function Blog({ data }: PageProps<Queries.BlogPostsQuery>) {
-  console.log(data);
   return (
     <Layout title="Blog">
       <section>
