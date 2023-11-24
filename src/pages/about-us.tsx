@@ -5,7 +5,7 @@ import Seo from "../components/Seo";
 export default function AboutUs() {
   return (
     <Layout title="about-us">
-      <p>We are the happiest sticker store.</p>
+      <p>Birds are the best.</p>
     </Layout>
   );
 }

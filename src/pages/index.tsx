@@ -7,7 +7,7 @@ import { IGatsbyImageData } from "gatsby-plugin-image";
 
 export default function IndexPage({ data }: PageProps<Queries.StickersQuery>) {
   return (
-    <Layout title="welcome to DevStickers">
+    <Layout title="welcome to BirdStickers">
       <div className="grid">
         {data.allContentfulStickerPack.nodes.map((sticker) => (
           <article>

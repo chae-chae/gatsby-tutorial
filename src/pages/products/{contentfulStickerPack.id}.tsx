@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../../components/Layout";
 import { PageProps, graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import Seo from "../../components/Seo";
 
 export default function ProductDetail({
   data,
@@ -26,3 +27,7 @@ export const query = graphql`
     }
   }
 `;
+
+export const Head = ({ data }: PageProps<Queries.ProductQuery>) => (
+  <Seo title={data.contentfulStickerPack?.name!} />
+);
